@@ -32,7 +32,6 @@ export class GifService {
 
   searchTag(tag: string): void {
     this.organizeHistory(tag);
-    console.log({ tag });
     const params = new HttpParams()
       .set('api_key', this.apiKey)
       .set('limit', this.limit)
