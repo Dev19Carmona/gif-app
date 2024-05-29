@@ -37,11 +37,11 @@ export class GifService {
       .set('limit', this.limit)
       .set('q', tag);
 
-    this.http
-      .get<SearchResponse>(`${this.gifServiceUrl}/search`, { params })
-      .subscribe((resp) => {
-        this.gifList = resp.data
-      });
+    // this.http
+    //   .get<SearchResponse>(`${this.gifServiceUrl}/search`, { params })
+    //   .subscribe((resp) => {
+    //     this.gifList = resp.data
+    //   });
   }
 
 }
