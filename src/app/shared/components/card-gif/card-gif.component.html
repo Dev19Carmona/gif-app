@@ -1,0 +1,14 @@
+<div class="text-center card mb-2 bg-dark d-flex justify-content-center">
+  @if (load) {
+
+  <app-loader-general></app-loader-general>
+  }@else {
+
+  <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-img-top animate__animated animate__fadeIn">
+  <div class="card-body text-white">
+    <p class="card-text">
+      {{gif.title}}
+    </p>
+  </div>
+  }
+</div>
